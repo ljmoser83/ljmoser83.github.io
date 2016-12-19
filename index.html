@@ -6,9 +6,84 @@
     <title>Lee Moser's Digital Mapping Portfolio</title>
 
     <meta name=‘viewport’ content=‘initial-scale=1,maximum-scale=1,user-scalable=no’ />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel='stylesheet' type='text/css'>
     <style>
-        /* CSS style rules go here! */
+        body {
+            background: #f5f5f5;
+            font-family: Imprima, sans-serif;
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        header {
+            width: 100%;
+            min-width: 800px;
+            margin: 0 auto;
+            background: steelblue;
+            padding: 15px 0 20px;
+        }
+        
+        h1 {
+            font-family: Dosis, sans-serif;
+            color: #375671;
+            width: 80%;
+            margin: 0 auto;
+            color: whitesmoke;
+        }
+        
+        h2 {
+            font-family: Dosis, sans-serif;
+            color: #375671;
+            width: 80%;
+            margin: 0 auto;
+            color: whitesmoke;
+        }
+        
+        h3 {
+            font-family: Dosis, sans-serif;
+            color: #003d71
+        }
+        
+        p {
+            font-size: .9em;
+            color: #375671;
+        }
+        
+        ul {
+            list-style-type: none;
+            font-size: .9em;
+            color: #375671;
+            line-height: 1.6em;
+        }
+        
+        a,
+        a:visited {
+            color: #003d71;
+        }
+        
+        .project {
+            width: 80%;
+            min-width: 800px;
+            height: 100%;
+            margin: 35px auto;
+        }
+        
+        .project:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .project-image {
+            width: 388px;
+            height: 240px;
+            background: white;
+            float: left;
+            margin-right: 20px;
+            border: 2px solid #dddddd;
+        }
     </style>
 </head>
 
@@ -17,48 +92,48 @@
         <h1>Lee Moser's Digitial Mapping Portfolio</h1>
         <h2>Developed as a Part of the Digital Mapping Program at the University of Kentucky</h2>
     </header>
-   
-    
-    
-    <section>
+
+
+
+    <section class='project'>
         <h3><a target =  '_blank' href= "resources/US_County_Population_Density_2010.pdf">2010 US Population Density by County</a></h3>
-        <a target =  '_blank' href= "resources/US_County_Population_Density_2010.pdf"><img src="images/popDensity.png" alt="2010 US Population Density by County"></a>
+        <a target='_blank' href="resources/US_County_Population_Density_2010.pdf"><img src="images/popDensity.png" alt="2010 US Population Density by County" class="project-image" /></a>
         <p>This map displays the population density of US counties in 2010. </p>
         <p>This map was generated utilizing QGIS 2.14.4-Essen digital mapping software.</p>
-        <p>Population density was calculated by normalizing county population by the area of the county in square miles.</p>
+        <p>Population density was calculated by dividing county population by the area of the county in square miles.</p>
         <ul>
-            <li>See the map:<a target =  '_blank' href="resources/US_County_Population_Density_2010.pdf">2010 US Population Density by County</a></li>
-            <li>Data Sources: <a target =  '_blank' href="https://www.census.gov/geo/maps-data/data/tiger.html">2010 US Census Bureau</a></li>
+            <li>See the map:<a target='_blank' href="resources/US_County_Population_Density_2010.pdf">2010 US Population Density by County</a></li>
+            <li>Data Sources: <a target='_blank' href="https://www.census.gov/geo/maps-data/data/tiger.html">2010 US Census Bureau</a></li>
         </ul>
     </section>
 
-    
-    
-    
-    <section>
+
+
+
+    <section class='project'>
         <h3><a target =  '_blank' href= "https://ljm83.carto.com/viz/c61c71c8-7cbf-11e6-b37a-0e05a8b3e3d7/public_map">Kentucky Paddling Destinations</a></h3>
-        <a target =  '_blank' href= "https://ljm83.carto.com/viz/c61c71c8-7cbf-11e6-b37a-0e05a8b3e3d7/public_map"><img src="images/paddlingKY.png" alt="Kentucky Paddling Destinations"></a>
-        <p>This interactive web map allows users to explore popular paddling destinations throughout Kentucky.  </p>
+        <a target='_blank' href="https://ljm83.carto.com/viz/c61c71c8-7cbf-11e6-b37a-0e05a8b3e3d7/public_map"><img src="images/paddlingKY.png" alt="Kentucky Paddling Destinations" class="project-image" /></a>
+        <p>This interactive web map allows users to explore popular paddling destinations throughout Kentucky. </p>
         <p>This web map was developed using the Carto web mapping platform.</p>
-        
+
         <ul>
-            <li>See the map:<a target =  '_blank' href= "https://ljm83.carto.com/viz/c61c71c8-7cbf-11e6-b37a-0e05a8b3e3d7/public_map">Kentucky Paddling Destinations</a></li>
-            <li>Data Sources: <a target =  '_blank' href=http://fw.ky.gov/Education/Pages/Blue-Water-Trails.aspx>Kentucky Blue Water Trails</a></li>
+            <li>See the map:<a target='_blank' href="https://ljm83.carto.com/viz/c61c71c8-7cbf-11e6-b37a-0e05a8b3e3d7/public_map">Kentucky Paddling Destinations</a></li>
+            <li>Data Sources: <a target='_blank' href=http://fw.ky.gov/Education/Pages/Blue-Water-Trails.aspx>Kentucky Blue Water Trails</a></li>
         </ul>
     </section>
 
-   
-    
-    
-    <section>
+
+
+
+    <section class='project'>
         <h3><a target =  '_blank' href= "#">Hydro, Solar, and Nuclear Power Plants in the United States</a></h3>
-        <a target =  '_blank' href= "#"><img src="images/energyLeafletMap.png" alt="Hydro, Solar, and Nuclear Power Plants in the United States"></a>
-        <p>This interactive web map allows users to explore hydro, solar, and nuclear power plants in the United States.  </p>
-        <p>This map was created using <a target= "_blank" href= "http://leafletjs.com/">Leaflet</a> and custom Javascript programming. </p>
+        <a target='_blank' href="#"><img src="images/energyLeafletMap.png" alt="Hydro, Solar, and Nuclear Power Plants in the United States" class="project-image" /></a>
+        <p>This interactive web map allows users to explore hydro, solar, and nuclear power plants in the United States. </p>
+        <p>This map was created using <a target="_blank" href="http://leafletjs.com/">Leaflet</a> and custom Javascript programming. </p>
         <p>The user can navigate around the United States and click on specific locations to see hydro, solar, and nuclear power plants within 500 km of the click location.</p>
         <ul>
-            <li>See the map:<a target =  '_blank' href="#">Hydro, Solar, and Nuclear Power Plants in the United States</a></li>
-            <li>Data Sources: <a target =  '_blank' href="http://www.eia.gov/electricity/data/eia923/">United States Power Plants</a></li>
+            <li>See the map:<a target='_blank' href="#">Hydro, Solar, and Nuclear Power Plants in the United States</a></li>
+            <li>Data Sources: <a target='_blank' href="http://www.eia.gov/electricity/data/eia923/">United States Power Plants</a></li>
         </ul>
     </section>
 
